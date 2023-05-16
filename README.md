@@ -7,4 +7,4 @@ To open project:
 4. Open browser and write ```/localhost/driving-school-system``` in searchbar
 
 Things to consider:
-depending on which server phpMyAdmin is ran and your settings on it change ```settings.php``` file
+depending on which server phpMyAdmin is ran and your settings on it change ```nustatymai.php``` file
