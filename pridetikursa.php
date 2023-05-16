@@ -71,10 +71,10 @@ if (!isset($_SESSION['prev']) || ($_SESSION['prev'] != "index"))
 				Data:<input name='date' type='date' min="<?php echo date("Y-m-d"); ?>" required><br><br>
 				Data iki:<input name='datetill' type='date' min="<?php echo date("Y-m-d"); ?>" required><br><br>
 				Vietų skaičius:<input name='cnt' type='number' min="1" max="100" required><br><br>
-				Aprašas:<textarea name='about' required></textarea><br><br>
+				Aprašas:<textarea id = "aboutcourse" name='about' required></textarea><br><br>
 				Kaina:<input name='price' type='number' min="1" step="any" max = "1200" required><br><br>
 				Tipas:
-				<table style="margin-left: auto; margin-right: auto;">
+				<table class = "types">
 						<tr><td><input name='tipas' type='radio' value='1' checked>Teorija</td></tr>
 						<tr><td><input name='tipas' type='radio' value='2'>Praktika</td></tr>
 						<tr><td><input name='tipas' type='radio' value='3'>Teorija + Praktika</td></tr>

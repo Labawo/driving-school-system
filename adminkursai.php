@@ -20,28 +20,7 @@ if (!isset($_SESSION['prev']) || ($_SESSION['prev'] != "index"))
                 include("include/meniu.php"); //įterpiamas meniu pagal vartotojo rolę
         ?>
         </table>
-        <form method='post'>
-				Pasirinkti pagal kokios kategorijos kursus žiūreti:
-				<select name="pavad">
-					<?php
-					include("include/nustatymai.php");
-					$db=mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
-					$sql = "SELECT pavadinimas "
-            		. "FROM " . TBL_LEAR 
-					. " GROUP BY pavadinimas"
-					. " ORDER BY pavadinimas";
-					$result = mysqli_query($db, $sql);
-					
-					while ($row = mysqli_fetch_assoc($result)){
-						$name = $row['pavadinimas'];
-						echo "<option value=\"$name\">" . $row['pavadinimas'] . "</option>";
-					}
-					?>
-				</select>
-				<div>
-					<input type='submit' name='ok' value='Perziureti'>
-				</div>
-		</form>
+        
         <?php
         if (isset($_POST["ok"])){
 			$pavadinimas = $_POST['pavad'];
@@ -132,7 +111,7 @@ if (!isset($_SESSION['prev']) || ($_SESSION['prev'] != "index"))
 		
         <center><font size="5">Dabar yra tokia registruotų kursų lentelė</font></center><br>
 		
-    <table class="center" border="1" cellspacing="0" cellpadding="3">
+    <table class="center" id ="customers" border="1" cellspacing="0" cellpadding="3">
 		<tr><td><b>Pavadinimas</b></td><td><b>Data</b></td><td><b>Data iki</b></td><td><b>Vietų sk.</b></td><td><b>Aprašas</b></td><td><b>Kaina</b></td><td><b>Tipas</b></td><td><b>Dėstytojas</b></td></tr>
 
         
