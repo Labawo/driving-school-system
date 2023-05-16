@@ -1,0 +1,69 @@
+table.meniu {
+    text-align: left;
+    background-color:#2fbe2f;
+    border:3px solid black;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: grey;
+    padding: 1px;
+    background-color: white;                
+}
+table.backlink {  
+    margin-left:auto; 
+    margin-right:auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: red;    
+    background-color: rgb(0, 132, 255);   
+}
+body {
+    text-align:center;
+}   
+form.login {
+    margin-bottom:0;
+    padding:6px; 
+    background-color:#2fbe2f; 
+    border:3px solid grey;
+    border-radius: 10px;               
+}
+input.s1 {   
+    width:100%;
+    font-size:13pt;
+    text-align:left;
+}
+
+a:link, a:visited {
+  border: 2px solid rgb(0, 132, 255);
+  border-radius: 25px;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: rgb(0, 132, 255);
+	color: white;
+
+}
+
+input[type=submit] {
+    background-color: rgb(0, 132, 255);
+	color: white;
+    border-radius: 25px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor:pointer;
+}
