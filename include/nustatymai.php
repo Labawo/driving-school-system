@@ -1,7 +1,7 @@
 <?php
 //nustatymai.php
-//define("DB_SERVER", "localhost");
-define("DB_SERVER", "127.0.0.1");
+// define("DB_SERVER", "localhost");
+define("DB_SERVER", "127.0.0.1:3308");
 //define("DB_USER", "stud");
 define("DB_USER", "root");
 //define("DB_PASS", "stud");
